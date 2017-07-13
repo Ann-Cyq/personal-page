@@ -267,6 +267,28 @@
 					pageIndex = 3;
 				}else{
 					handlePage();
+					// 点击哪个页面就执行对应的打字程序
+				  	typeArr[pageIndex].start();
+				  	typeArr.splice(pageIndex,1,'0');
+				  	if (pageIndex == 1) {
+				  		// 设置项目展示自动弹出
+						setTimeout(function(){
+							$('.swiper-container').fadeIn('slow');
+							// 页面二的图片展示
+							var mySwiper = new Swiper('.swiper-container',{
+								effect : 'coverflow',
+								slidesPerView: 3,
+								centeredSlides: true,
+								coverflow: {
+							            rotate: 30,
+							            stretch: 10,
+							            depth: 60,
+							            modifier: 2,
+							            slideShadows : true
+							        }
+								})
+						}, 20000);
+				  	};
 				}
 			}else if(delta == 1){
 				pageIndex--;
@@ -274,6 +296,28 @@
 					pageIndex = 0;
 				}else{
 					handlePage();
+					// 点击哪个页面就执行对应的打字程序
+				  	typeArr[pageIndex].start();
+				  	typeArr.splice(pageIndex,1,'0');
+				  	if (pageIndex == 1) {
+				  		// 设置项目展示自动弹出
+						setTimeout(function(){
+							$('.swiper-container').fadeIn('slow');
+							// 页面二的图片展示
+							var mySwiper = new Swiper('.swiper-container',{
+								effect : 'coverflow',
+								slidesPerView: 3,
+								centeredSlides: true,
+								coverflow: {
+							            rotate: 30,
+							            stretch: 10,
+							            depth: 60,
+							            modifier: 2,
+							            slideShadows : true
+							        }
+								})
+						}, 20000);
+				  	};
 				}	
 			}
 		});
