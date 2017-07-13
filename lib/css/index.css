@@ -1,0 +1,328 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 18px;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+/*页面的背景样式*/
+#page{
+	width: 100%;	
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+	position: relative;
+}
+.location{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+.location li{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.location li:nth-child(1){
+	background-image: url('../../src/images/1.jpg');	
+}
+.location li:nth-child(2){
+	background-image: url('../../src/images/3.jpg');	
+}
+.location li:nth-child(3){
+	background-image: url('../../src/images/7.jpg');	
+}
+.location li:nth-child(4){
+	background-image: url('../../src/images/2.jpg');	
+}
+.guide{
+	height: 200px;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -100px;
+	z-index: 9999;
+}
+.guide>li{
+	width: 100px;
+	height: 50px;
+	text-align: center;;
+	line-height: 50px;
+}
+.guide>li a{
+	color: #ccc;
+}
+/*第一个页面*/
+.location li .content{
+	width: 1000px;
+	height: 500px;
+	margin: 0 auto;
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	margin-left: -500px;
+}
+.location li .content .introduce{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+.location li .content .introduce .title{
+	width: 100%;
+	height: 10%;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	border-bottom: 1px dashed black;
+}
+.location li .content .introduce .w{
+	width: 80%;
+	height: 80%;
+	margin: 2% auto;
+}
+.location li .content .introduce .w #src_introduce{
+	display: none;
+}
+.location li .content .introduce .w #output{
+	color: #fefefe;
+}
+.location li .content .introduce .w #output h3{
+	color: #000;
+	display:inline
+}
+/*第二个页面*/
+.location li .content{
+	width: 1000px;
+	height: 500px;
+	margin: 0 auto;
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	margin-left: -500px;
+}
+.location li .content .project1{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+.location li .content .project1 .title{
+	width: 100%;
+	height: 10%;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	border-bottom: 1px dashed black;
+}
+.location li .content .project1 .w{
+	width: 80%;
+	height: 80%;
+	margin: 2% auto;
+}
+.location li .content .project1 .w #src_project1{
+	display: none;
+}
+.location li .content .project1 .w #output_project1{
+	color: #fefefe;
+}
+.location li .content .project1 .w #output_project1 h3{
+	color: #000;
+	display:inline
+}
+.location li .content .project1 .w .swiper-container{
+	display: none;
+	width: 1000px;
+	height: 500px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -500px;
+}
+.location li .content .project1 .w .swiper-container p{
+	color: #fefefe;
+	position: absolute;
+	right: -300px;
+	top: 0;
+	font-size: 10px;
+	background-color: #ccc;
+	width: 50px;
+	cursor: pointer;
+}
+.location li .content .project1 .w .swiper-container img{
+	width: 500px;
+	height: 500px;
+}
+/*第三个页面*/
+.location li .content{
+	width: 1000px;
+	height: 500px;
+	margin: 0 auto;
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	margin-left: -500px;
+}
+.location li .content .project2{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+.location li .content .project2 .title{
+	width: 100%;
+	height: 10%;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	border-bottom: 1px dashed black;
+}
+.location li .content .project2 .w{
+	width: 80%;
+	height: 80%;
+	margin: 1% auto;
+}
+.location li .content .project2 .w #src_project2{
+	display: none;
+}
+.location li .content .project2 .w #output_project2{
+	color: #fefefe;
+}
+.location li .content .project2 .w #output_project2 h3{
+	color: #000;
+	display:inline
+}
+/*第四个页面*/
+.wrap {
+    margin-top: 150px;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+}
+@keyframes bganim {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: 80px;
+    }
+}
+.cube {
+    margin: auto;
+    position: relative;
+    height: 200px;
+    width: 200px;
+    transform-style: preserve-3d;
+}
+.cube div {
+    position: absolute;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    background-color: #000;
+    border: solid 1px #eee;
+    color: #fff;
+    font: 10px arial;
+    transition: transform 0.2s ease-in;
+    background-size:200px 200px;
+}
+.front {
+    background: url('../../src/images/p1.jpg');
+    transform: translateZ(100px);
+}
+.back {
+    background: url('../../src/images/p2.jpg');
+    transform: translateZ(-100px) rotateY(180deg);
+}
+.right {
+    background: url('../../src/images/p3.jpg');
+    transform: rotateY(-270deg) translateX(100px);
+    transform-origin: top right;
+}
+.left {
+    background: url('../../src/images/p4.jpg');
+    transform: rotateY(270deg) translateX(-100px);
+    transform-origin: center left;
+}
+.top {
+    background: url('../../src/images/p5.jpg');
+    transform: rotateX(-270deg) translateY(-100px);
+    transform-origin: top center;
+}
+.bottom {
+    background: url('../../src/images/p6.jpg');
+    transform: rotateX(270deg) translateY(100px);
+    transform-origin: bottom center;
+}
+/* inner cube */
+i{
+  position:absolute;
+  top:50px;
+  left:50px;
+  width:100px;
+  height:100px;
+  display:block;
+  background:url('../../src/images/cube.gif');
+  transition: all 1s linear;
+}
+i.i_front{
+  transform: translateZ(50px);
+}
+i.i_back{
+  transform: translateZ(-50px) rotateY(180deg);
+}
+i.i_bottom{
+  transform:rotateX(-90deg) translateY(50px);
+  transform-origin: left bottom;
+}
+i.i_left{
+  transform:rotateY(270deg) translateX(-50px);
+  transform-origin: center left;
+}
+i.i_right{
+  transform:rotateY(-270deg) translateX(50px);
+  transform-origin: top right;
+}
+i.i_top{
+  transform:rotateX(-270deg) translateY(-50px);
+  transform-origin: left top;
+}
+@keyframes rotate {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+.cube {
+    animation: rotate 20s infinite linear;
+}
+.wrap:hover .front {
+    transform: translateZ(200px);
+}
+.wrap:hover .back {
+    transform: translateZ(-200px) rotateY(180deg);
+}
+.wrap:hover .right {
+    transform: rotateY(-270deg) translateZ(100px) translateX(100px);
+}
+.wrap:hover .left {
+    transform: rotateY(270deg) translateZ(100px) translateX(-100px);
+}
+.wrap:hover .top {
+    transform: rotateX(-270deg) translateZ(100px) translateY(-100px);
+}
+.wrap:hover .bottom {
+    transform: rotateX(270deg) translateZ(100px) translateY(100px);
+}

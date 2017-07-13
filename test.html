@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="./lib/js/swiper-3.4.2.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./lib/css/swiper-3.4.2.min.css">
+	<style type="text/css">
+		p{
+			width: 100px;
+			height: 100px;
+		}
+		.icon{
+			width: 42px;
+			height: 58px;
+			background-image: url('./src/images/player@2x.png');
+			background-position:-0 -0; 
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+	<div class="swiper-container">
+	    <audio id="audio" src="./src/Colbie Caillat-Try.mp3"></audio>
+	    <div class="icon"></div>
+	</div>
+	<script type="text/javascript">
+		var audio = document.querySelector('audio');
+		audio.play();
+	</script>
+</body>
+</html>
